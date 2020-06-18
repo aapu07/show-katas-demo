@@ -257,11 +257,11 @@ let smallNumber = finalArray11[0]
 
 for (let i = 0; i < 20; i++) {
     let currentNumber = finalArray11[i]
-    if (currentNumber<=smallNumber) {
-        smallNumber=currentNumber
+    if (currentNumber <= smallNumber) {
+        smallNumber = currentNumber
 
     }
-   
+
 
 }
 
@@ -274,14 +274,91 @@ let biggestNumber = finalArray11[0]
 
 for (let i = 0; i < 20; i++) {
     let currentNumber = finalArray11[i]
-    if (currentNumber>=biggestNumber) {
-        biggestNumber=currentNumber
+    if (currentNumber >= biggestNumber) {
+        biggestNumber = currentNumber
 
     }
-   
+
 
 }
 
 let newDiv18 = document.createElement('div')
 newDiv18.append(biggestNumber)
 bodyElement.append(newDiv18)
+
+creatAppendHeader("kata 19")
+
+for (let i = 0; i < 20; i++) {
+    let newDiv19 = document.createElement('div')
+    newDiv19.style.height = '20px';
+    newDiv19.style.width = '100px';
+
+    newDiv19.style.backgroundColor = 'gray';
+    newDiv19.style.marginTop = '5px';
+    bodyElement.append(newDiv19)
+}
+
+
+creatAppendHeader("kata 20")
+for (let i = 105; i < 200; i = i + 5) {
+    let newDiv20 = document.createElement('div')
+    newDiv20.style.width = i + 'px';
+    newDiv20.style.height = '20px';
+    newDiv20.style.backgroundColor = 'red';
+    newDiv20.style.marginTop = '5px';
+    bodyElement.append(newDiv20)
+
+}
+
+creatAppendHeader("kata 21")
+const sampleArray = [
+    469, 755, 244, 245, 758, 450, 302, 20, 712, 71,
+    456, 21, 398, 339, 882, 848, 179, 535, 940, 472,
+];
+
+for (let k = 0; k < 20; k = k + 1) {
+   
+    let newDiv21 = document.createElement('div')
+    newDiv21.style.width = sampleArray[k] + 'px';
+    newDiv21.style.height = '20px';
+    newDiv21.style.backgroundColor = 'gray'
+    newDiv21.style.marginTop = '5px';
+    bodyElement.append(newDiv21)
+
+}
+creatAppendHeader("kata 22")
+
+for (let k = 0; k < 20; k = k + 1) {
+   
+    let newDiv22 = document.createElement('div')
+    newDiv22.style.width = sampleArray[k] + 'px';
+    newDiv22.style.height = '20px';
+    if (k % 2 === 0) {
+        newDiv22.style.backgroundColor = 'red'
+    }
+    else {
+        newDiv22.style.backgroundColor = 'gray'
+    }
+
+    newDiv22.style.marginTop = '5px';
+    bodyElement.append(newDiv22)
+
+}
+creatAppendHeader("kata 23")
+
+for (let k = 0; k < 20; k = k + 1) {
+    
+    let newDiv23 = document.createElement('div')
+    newDiv23.style.width = sampleArray[k] + 'px';
+    newDiv23.style.height = '20px';
+    if (sampleArray[k] % 2 === 0) {
+        newDiv23.style.backgroundColor = 'red'
+    }
+    else {
+        newDiv23.style.backgroundColor = 'gray'
+    }
+
+    newDiv23.style.marginTop = '5px';
+    bodyElement.append(newDiv23)
+}
+console.log(sampleArray)
