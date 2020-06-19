@@ -304,11 +304,12 @@ for (let i = 105; i < 200; i = i + 5) {
     let newDiv20 = document.createElement('div')
     newDiv20.style.width = i + 'px';
     newDiv20.style.height = '20px';
-    newDiv20.style.backgroundColor = 'red';
+    newDiv20.style.backgroundColor = 'gray';
     newDiv20.style.marginTop = '5px';
     bodyElement.append(newDiv20)
 
 }
+
 
 creatAppendHeader("kata 21")
 const sampleArray = [
